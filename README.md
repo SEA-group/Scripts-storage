@@ -2,7 +2,6 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/SEA-group/Scripts-storage)
 ![GitHub issues](https://img.shields.io/github/issues-raw/SEA-group/Scripts-storage)
-![GitHub downloads](https://img.shields.io/github/downloads/SEA-group/Scripts-storage)
 
 By AstreTunes @ SEA group
 

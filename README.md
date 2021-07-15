@@ -8,8 +8,8 @@ By AstreTunes @ SEA group
 A bunch of unnecessary but useful scripts for World of Warships skin modding; "necessary" scripts are [here](https://github.com/SEA-group/ContentSDK-0.9.7-fix-tools)
 
 ## Content
-* **SEA_camo_remover_py3.py** disables camouflages by editing material tag in *.visual* files
-* **SEA_camo_reverser_py3.py** restores the camouflages disabled by the *SEA_camo_remover_py3.py*
-* **SEA_comma2point_py3.py** replaces commas with points in ascii *.obj* files, because the chinese WoT Model Editor cannot recognize comma as decimal mark
-* **SEA_fx_update_py3.py** parses *.mfm* files and changes `shaders/std_effects/PBS_*.fx` to newer `shaders/materials/pbs/*_material.fx`
-* **MatrixCal.m** calculates transformation matrices
+* [Python 3] **SEA_camo_remover_py3.py** disables camouflages by editing material tags in *.visual* files
+* [Python 3] **SEA_camo_reverser_py3.py** restores the camouflages disabled by the *SEA_camo_remover_py3.py*
+* [Python 3] **SEA_comma2point_py3.py** replaces commas with points in ascii *.obj* files, because the chinese WoT Model Editor cannot recognize comma as decimal mark
+* [Python 3] **SEA_fx_update_py3.py** parses *.mfm* files and changes `shaders/std_effects/PBS_*.fx` to newer `shaders/materials/pbs/*_material.fx`
+* [Matlab] **MatrixCal.m** calculates transformation matrices

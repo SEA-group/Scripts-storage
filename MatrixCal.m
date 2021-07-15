@@ -1,0 +1,46 @@
+%% OpenGL Transformation matrix calculation
+
+clc
+clear
+close all
+
+%% Params
+
+TransX = 0;
+TransY = 0;
+TransZ = 0;
+RotX = 0;
+RotY = -140;
+RotZ = 0;
+ScaleX = 1;
+ScaleY = 1;
+ScaleZ = 1;
+
+%% Calculation
+
+MatScale = [ScaleX, 0, 0, 0; ...
+            0, ScaleY, 0, 0; ...
+            0, 0, ScaleZ, 0; ...
+            0, 0, 0, 1];
+
+MatRotX =   [1, 0, 0, 0; ...
+            0, cosd(RotX), sind(RotX), 0; ...
+            0, -sind(RotX), cosd(RotX), 0; ...
+            0, 0, 0, 1];
+        
+MatRotY =   [cosd(RotY), 0, -sind(RotY), 0; ...
+            0, 1, 0, 0; ...
+            sind(RotY), 0, cosd(RotY), 0; ...
+            0, 0, 0, 1];
+        
+MatRotZ =   [cosd(RotZ), -sind(RotZ), 0, 0; ...
+            sind(RotZ), cosd(RotZ), 0, 0; ...
+            0, 0, 1, 0;
+            0, 0, 0, 1];
+        
+MatTrans =  [1, 0, 0, 0; ...
+            0, 1, 0, 0; ...
+            0, 0, 1, 0; ...
+            TransX, TransY, TransZ, 1];
+        
+Transformation = MatScale * MatRotX * MatRotY * MatRotZ * MatTrans;

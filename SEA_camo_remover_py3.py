@@ -29,7 +29,7 @@ def main(fileDir):
             f.seek(0)
             f.truncate()
             for line in all_the_lines:
-                f.write(line.replace('SHIPMAT_','SHIPMATX_').replace('SHIPWIRE_','SHIPWIREX_')) 
+                f.write(line.replace('SHIPMAT_','SHIPMATX_').replace('SHIPWIRE_','SHIPWIREX_').replace('PBS_','PBSX_')) 
             f.close()
 
 main("./")

@@ -35,7 +35,7 @@ for indFile = 1:size(mfmFileList, 1)
             
         elseif contains(line, 'shaders/std_effects/lightonly_alpha_flat_skinned.fx')
             
-            newLine = replace(line, 'shaders/std_effects/lightonly_alpha_flat.fx', 'shaders/materials/pbs/glass_material_skinned.fx');
+            newLine = replace(line, 'shaders/std_effects/lightonly_alpha_flat_skinned.fx', 'shaders/materials/pbs/glass_material_skinned.fx');
             modified = 1;
             
         else
